@@ -1,5 +1,6 @@
 # Deep-Learning-based-Low-dose-Tomography-Reconstruction-with-Hybrid-dose-Measurements
-This repository includes the functions for [deep learning-based low-dose tomography tomography reconstruction with hybrid-dose measurements](https://arxiv.org/abs/2009.13589).
+This repository includes the functions for [deep learning-based low-dose tomography tomography reconstruction with hybrid-dose measurements](https://arxiv.org/abs/2009.13589). In this work, we present a deep learning-based method to enhance low-dose tomography reconstruction via a hybrid-dose acquisition strategy composed of extremely sparse-view normal-dose projections and full-view low-dose projections. Corresponding image pairs are extracted from low-/normal-dose projections to train a deep convolutional neural network, which is then applied to enhance full-view noisy low-dose projections. Evaluation on two experimental datasets under different hybrid-dose acquisition conditions show significantly improved structural details and reduced noise levels compared to uniformly distributed acquisitions with the same number of total dosage. 
+![Method](https://github.com/Ziling-Wu/Deep-Learning-based-Low-dose-Tomography-Reconstruction-with-Hybrid-dose-Measurements/blob/main/Datasets/01_method.png)
 
 ## Trainning
 There are two different networks included, one is traditional Unet structure and the other is Unet with residual blocks. For each network, three different loss functions could be chosen by setting the correponding parameters. Here is the example to run by using mean absolute error loss only:
