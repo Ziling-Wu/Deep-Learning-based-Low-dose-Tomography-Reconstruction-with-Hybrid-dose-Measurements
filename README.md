@@ -1,5 +1,5 @@
 # Deep-Learning-based-Low-dose-Tomography-Reconstruction-with-Hybrid-dose-Measurements
-This repository includes the functions for deep learning-based low-dose tomography tomography reconstruction with hybrid-dose measurements.
+This repository includes the functions for [deep learning-based low-dose tomography tomography reconstruction with hybrid-dose measurements](https://arxiv.org/abs/2009.13589).
 
 ## Trainning
 There are two different networks included, one is traditional Unet structure and the other is Unet with residual blocks. For each network, three different loss functions could be chosen by setting the correponding parameters. Here is the example to run by using mean absolute error loss only:
@@ -17,6 +17,10 @@ The function "main_predict_proj.py" is included to test the trainned networks. H
 *python ./projection_sino/main_predict_proj.py -gpus 1 -modelName nor-proj-ResUnet2-random-2-dose100-l1-it20000 -xtest sino_00058_noisy_100 -tomo 58*
 
 Corresponding datasets and trained models are also included in the 'Datasets' folder. 
+
+If you find this work helpful, please consider cite:
+
+Wu, Ziling, Tekin Bicer, Zhengchun Liu, Vincent De Andrade, Yunhui Zhu, and Ian T. Foster. "Deep Learning-based Low-dose Tomography Reconstruction with Hybrid-dose Measurements." arXiv preprint arXiv:2009.13589 (2020).
 
 
 
